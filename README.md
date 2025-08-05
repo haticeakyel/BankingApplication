@@ -1,4 +1,4 @@
-# 🏦 Mini Banking Application (Full-Stack)
+# Mini Banking Application (Full-Stack)
 
 This is a full-stack banking application built with **Java Spring Boot** for the backend and **React** for the frontend.
 
@@ -6,12 +6,12 @@ Users can register, create bank accounts, transfer money, and view transaction h
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 .
 ├── bank-app # Spring Boot backend
 └── bank-app-front # React frontend
 
-## 🚀 Technologies
+## Technologies
 
 - **Java 17**
 - **Spring Boot**
@@ -20,7 +20,7 @@ Users can register, create bank accounts, transfer money, and view transaction h
 - **MYSQL** 
 
 
-## ✅ Features
+## Features
 
 ### Backend (Spring Boot)
 - User registration and login
@@ -39,7 +39,7 @@ Users can register, create bank accounts, transfer money, and view transaction h
 
 ---
 
-## 🔧 How to Run
+## How to Run
 
 ### Backend
 
@@ -50,4 +50,16 @@ cd bank-app
 cd bank-app-front
 npm install
 npm start
+
+##APIs
+POST   /api/users/register         → Register with email, username, password
+POST   /api/users/login            → Login and get JWT
+POST   /api/accounts               → Create new account
+GET    /api/accounts               → List all user accounts
+POST   /api/accounts/search        → Search accounts by number or name
+GET    /api/accounts/{id}          → Get specific account details
+PUT    /api/accounts/{id}          → Update account
+DELETE /api/accounts/{id}          → Delete account
+POST   /api/transactions/transfer  → Transfer money between accounts
+GET    /api/transactions/account/{id} → View transaction history of an account
 
